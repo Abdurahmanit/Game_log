@@ -2,6 +2,7 @@ package services
 
 import (
 	"context"
+	"log"
 
 	"github.com/Abdurahmanit/Game_log/backend/database"
 	"github.com/Abdurahmanit/Game_log/backend/model"
@@ -21,4 +22,12 @@ func LoginUser(email, password string) (model.User, error) {
 	var user model.User
 	err := userCollection.FindOne(context.TODO(), bson.M{"email": email, "password": password}).Decode(&user)
 	return user, err
+}
+
+func init() {
+	if database.Client != nil {
+		userCollection = database.Client.Database("game-log").Collection("users")
+	} else {
+		log.Fatal("MongoDB client is not initialized")
+	}
 }
