@@ -1,9 +1,10 @@
 package services
 
 import (
-	"Game-Log/backend/database"
-	"Game-Log/backend/model"
 	"context"
+
+	"github.com/Abdurahmanit/Game_log/backend/database"
+	"github.com/Abdurahmanit/Game_log/backend/model"
 
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"

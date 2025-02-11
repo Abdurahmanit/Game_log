@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"Game-Log/backend/controllers"
+	"github.com/Abdurahmanit/Game_log/backend/controllers"
 
 	"github.com/gin-gonic/gin"
 )

@@ -1,4 +1,4 @@
-module Game-Log/backend
+module github.com/Abdurahmanit/Game_log/backend
 
 go 1.23.4
 

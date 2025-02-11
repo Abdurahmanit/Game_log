@@ -1,9 +1,10 @@
 package controllers
 
 import (
-	"Game-Log/backend/model"
-	"Game-Log/backend/services"
 	"net/http"
+
+	"github.com/Abdurahmanit/Game_log/backend/model"
+	"github.com/Abdurahmanit/Game_log/backend/services"
 
 	"github.com/gin-gonic/gin"
 )

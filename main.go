@@ -1,8 +1,8 @@
 package main
 
 import (
-	"Game-Log/backend/database"
-	"Game-Log/backend/routes"
+	"github.com/Abdurahmanit/Game_log/backend/database"
+	"github.com/Abdurahmanit/Game_log/backend/routes"
 
 	"github.com/gin-gonic/gin"
 )
